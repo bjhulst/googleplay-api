@@ -31,7 +31,7 @@ passwd = "mypasswd"
 api = GooglePlayAPI(locale="en_US", timezone="UTC", device_codename="hero2lte")
 api.login(email=mail, password=passwd)
 
-result = server.search("firefox")
+result = api.search("firefox")
 
 for doc in result:
     print("doc: {}".format(doc["docid"]))
